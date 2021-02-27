@@ -1,0 +1,16 @@
+.cube-container{
+    width: 12rem;
+    height: 12rem;
+    margin-right: 2rem;
+}
+.bank-cube{
+    width: 100% !important;
+    height: 100% !important;
+}
+@media screen and (max-width: 768px) {
+    .cube-container{
+        width: 9rem;
+        height: 9rem;
+     
+    }
+}

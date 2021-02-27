@@ -1,0 +1,11 @@
+@import "../../variable.scss";
+
+.about-bg {
+  background: $main-gradient;
+  padding: 1px;
+}
+.about-content {
+  background: #111;
+  padding: 1rem 20px;
+  color: #acacac;
+}

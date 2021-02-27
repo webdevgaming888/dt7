@@ -1,0 +1,14 @@
+
+
+
+.logo-img {
+  width: 7rem;
+  height:7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-img {
+    width: 4rem;
+    height:4rem;
+  }
+}

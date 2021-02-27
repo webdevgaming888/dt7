@@ -1,0 +1,130 @@
+.footer {
+  padding: 2rem 0;
+  background: #000;
+  width: 100%;
+  bottom: 0;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-title {
+  color: #fff;
+  margin-bottom: .2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content {
+  color: rgb(172, 172, 172);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+.footer-content-left,.footer-content-right{
+  display: flex;
+}
+.footer-content-right{
+  .footer-link{
+    border-right: 1px solid rgb(167, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding: 0 .5rem;
+    &:nth-last-child(1){
+      border-right: 0;
+      padding-right:0;
+    }
+    a{
+      color: rgb(167, 167, 167);
+    }
+  }
+}
+}
+.footer-col {
+  width: 100%;
+}
+.footer-contact {
+  cursor: pointer;
+  background: linear-gradient(to bottom, #d3b719 10%, rgb(255, 224, 46) 20%,#d3b719);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  span{
+    font-size: 2rem;
+    display: flex;
+  }
+}
+
+.right-icon {
+  margin-left: -0.2rem;
+  margin-right: 0.5rem;
+}
+
+.footer-bank {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  a{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    filter: grayscale(30%);
+
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+    img {
+      width: 3.4rem;
+      height: 3.4rem;
+      border-radius: 10px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 5rem 1rem;
+  }
+  .footer-col {
+    width: 100%;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .footer-title{
+    margin-bottom: 1rem;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+    .footer-contact{
+      margin-bottom:.5rem;
+    }
+  }
+  .quick-link {
+    display: none !important;
+  }
+  .why-us,
+  .contact-us,
+  .footer-nav,
+  .footer-bank {
+    padding-bottom: 1rem;
+  }
+  .footer-bank {
+    a {
+      width: 33.3%;
+      margin-right: 0;
+      img{
+        width: 3rem;
+        height: 3rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+}

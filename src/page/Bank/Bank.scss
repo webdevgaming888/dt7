@@ -1,0 +1,69 @@
+@import "../../variable.scss";
+
+.bank-group {
+  background:$main-gradient;
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+  margin-right: 1rem;
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+.bank-group-inner {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  .bank-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  .ewallet-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    img {
+      margin-right: 1.5rem;
+      &:nth-child(5n + 5) {
+        margin-right: 0;
+      }
+    }
+  }
+  img {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.bank-desc {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .bank-list {
+    flex-wrap: wrap;
+  }
+  .ewallet-list {
+    img {
+      width: 45%;
+      height: 45%;
+      margin-right: 1.5rem !important;
+      &:nth-child(even) {
+        margin-right: 0 !important;
+      }
+    }
+  }
+  .bank-group-inner {
+    img {
+      width: 45%;
+      height: 45%;
+      margin-bottom: 1rem;
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+    }
+  }
+}

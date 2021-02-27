@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  padding: 0rem 1rem;
+  z-index: 3;
+  position: relative;
+  background: #000;
+  height: 10vh;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left{
+  display: flex;
+  align-items: center;
+}

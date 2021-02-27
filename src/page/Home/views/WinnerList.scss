@@ -1,0 +1,80 @@
+.winner-list,
+.deposit-list {
+  width: 60%;
+  color: #fff;
+  height: 37.8rem;
+  overflow: hidden;
+}
+.winner-list {
+  margin-left: 1rem;
+}
+.title {
+  color: #ffff00;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #4b0100, #180010);
+}
+.list-header {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+  span {
+    font-weight: bold;
+  }
+}
+.list-body {
+  background: url("../../../assests/common/titlebanner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.list-body-inner {
+  animation: scroll 80s linear infinite;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1.5rem;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.list-row {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.list-date {
+  width: 40%;
+}
+.list-phone {
+  width: 40%;
+}
+.list-amount {
+  width: 20%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-90%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .winner-list,
+  .deposit-list {
+    width: 100%;
+  }
+  .winner-list {
+    margin-left: 0;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../variable.scss";
+
+.promo-card {
+  background: $main-gradient;
+  padding: 1px;
+  margin-bottom: 1rem;
+}
+.promo-card-inner {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  background: url("../../assests/common/promo-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.promo-title {
+  color: #fff;
+}
+.promo-details {
+  color: #acacac;
+}
+.promo-btn {
+  width: 6rem;
+  height: 2rem;
+  button {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo-btn {
+    width: 100%;
+  }
+}

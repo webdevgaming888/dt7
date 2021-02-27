@@ -1,0 +1,100 @@
+
+.guide-inner {
+
+  display: flex;
+  height: 18rem;
+  width: 100%;
+}
+.guide-card {
+  flex:1;
+  display: flex;
+  align-items: center;
+  width: 25%;
+  min-height: 100%;
+  transition: 0.3s ease;
+  background: rgba(0,0,0,.7);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &:hover{
+
+    flex-grow: 3;
+      background: url('../../../assests/common/guide-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    .guide-content{
+      display: block;
+      opacity: 1;
+    }
+    .guide-title{
+      color: #fff;
+    }
+  }
+}
+
+.guide-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+
+.guide-icon{
+  width: 5rem;
+  height: 5rem;
+  svg{
+    height: 100%;
+    width: 100%;
+    color: #d3b719;
+  }
+}
+.guide-title {
+  font-size: 1.5rem;
+  color: #d3b719;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.guide-content {
+  color: #acacac;
+  display: none;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .guide-card {
+    width: 50%;
+    padding: 1rem;
+    flex: none;
+    border: 1px solid #111;
+    .guide-wrapper {
+      width: 100%;
+    }
+  }
+  .guide-inner {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .guide-icon{
+    width: 2rem;
+    height: 2rem;
+    svg{
+      color: #f8e680;
+    }
+  }
+  .guide-title {
+    font-size: 1rem;
+    color: #f8e680;
+  }
+  .guide-content {
+    font-size: .8rem;
+    text-align: center;
+  }
+}

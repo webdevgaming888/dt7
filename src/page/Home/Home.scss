@@ -1,0 +1,21 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+}
+.guide-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.home-list {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .home-list {
+    flex-wrap: wrap;
+  }
+}

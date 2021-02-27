@@ -1,0 +1,60 @@
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.language-select {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  background:#111;
+  padding: 1px;
+  top: 110%;
+  animation: langshow ease-in-out 0.3s;
+  button {
+    white-space: nowrap;
+    border: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 0.5rem;
+    margin-bottom: 1px;
+    border: 1px solid #f8e680;
+  }
+}
+.icon-language {
+  color: rgb(184, 184, 184);
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+.hide-lang {
+  display: none;
+}
+.current-language {
+  color: rgb(184, 184, 184);
+  margin-left: 0.2rem;
+  font-size: 0.8rem;
+}
+.language-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@keyframes langshow {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .language-select {
+    left: -187%;
+  }
+}
