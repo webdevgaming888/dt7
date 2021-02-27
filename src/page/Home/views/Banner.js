@@ -8,6 +8,10 @@ import logo from "../../../assests/navigationbar/logo.jpg"
 import SwiperCore, { Autoplay } from "swiper";
 SwiperCore.use([Autoplay]);
 const Banner = ({ banner, t }) => {
+  const whatsappLink = (e) => {
+    e.preventDefault();
+    window.location.href = window.whatsapp;
+  };
   return (
     <Swiper
       pagination={{ clickable: true }}
@@ -28,7 +32,7 @@ const Banner = ({ banner, t }) => {
                <h1>{t(img.title)}</h1>
               <p>{t(img.content)}</p>
               <div className='banner-button-group'>
-                <button>{t('applyNow')}</button>
+                <button onClick={whatsappLink}>{t('applyNow')}</button>
               <Link to={`${process.env.PUBLIC_URL}/promotion`}>
                 {t("seemore")}
               </Link>
