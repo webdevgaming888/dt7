@@ -21,6 +21,12 @@
   height: 100%;
   display: flex;
   align-items: center;
+  .home-game-link{
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+  }
   .games-slider {
     background: #000;
     border: #efd48d 1px solid;

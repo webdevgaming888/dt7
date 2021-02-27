@@ -26,6 +26,7 @@ const GameSection = ({ t }) => {
         </Link>
       </div>
       <div className="home-right">
+        <Link to={`${process.env.PUBLIC_URL}/games`} className='home-game-link'>
         <Swiper
           effect="coverflow"
           coverflowEffect={{
@@ -53,7 +54,7 @@ const GameSection = ({ t }) => {
               </div>
             );
           })}
-        </Swiper>
+        </Swiper></Link>
       </div>
     </section>
   );
