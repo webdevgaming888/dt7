@@ -118,7 +118,6 @@
   }
   .footer-bank {
     a {
-      width: 33.3%;
       margin-right: 0;
       img{
         width: 3rem;
@@ -126,5 +125,8 @@
         margin-right: .5rem;
       }
     }
+  }
+  .footer-content-right{
+    flex-wrap: wrap;
   }
 }
