@@ -15,12 +15,12 @@ const Bank = ({ t }) => {
           name="description"
           content="Easy deposit with Digi, Maxis and Multiple banks support"
         />
-        <link rel="canonical" href="https://judibang99.net/bank" />
+        <link rel="canonical" href="https://dato777.net/bank" />
         <meta property="og:title" content={window.compName} />
         <meta property="og:description" content="Easy deposit with Digi, Maxis and Multiple banks support"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://judibang99.net/bank"/>
+        <meta property="og:url" content="https://dato777.net/bank"/>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Dato777" />
       </Helmet>

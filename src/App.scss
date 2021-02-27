@@ -88,6 +88,9 @@ body::-webkit-scrollbar-thumb {
   stroke-dashoffset: -134;
   stroke-width: 6;
 }
+a:hover{
+  text-decoration: none;
+}
 
 @media screen and (max-width: 768px) {
   .menu {

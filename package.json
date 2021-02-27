@@ -1,5 +1,5 @@
 {
-  "homepage": "https://judibang99.net",
+  "homepage": "https://webdevgaming888.github.io/dt7",
   "name": "dt7",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +8,6 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.6.0",
-    "dayjs": "^1.10.4",
     "i18next": "^19.8.7",
     "i18next-browser-languagedetector": "^6.0.1",
     "node-sass": "^4.14.1",
@@ -23,7 +22,6 @@
     "react-odometerjs": "^2.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "react-slick": "^0.27.14",
     "slick-carousel": "^1.8.1",
     "swiper": "^6.4.15",
     "web-vitals": "^0.2.4"

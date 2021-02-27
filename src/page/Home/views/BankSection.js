@@ -7,9 +7,15 @@ import "swiper/components/effect-flip/effect-flip.scss";
 import "swiper/components/effect-cube/effect-cube.scss";
 import { BankList, WalletList } from "../../Bank/BankData";
 import { FaChevronRight } from "react-icons/fa"
+import { withNamespaces } from "react-i18next";
+
 SwiperCore.use([Autoplay, EffectCube]);
 
-const BankSection = () => {
+const BankSection = ({t}) => {
+  const whatsappLink = (e) => {
+    e.preventDefault();
+    window.location.href = window.whatsapp;
+  };
   return (
     <section className="home-section2">
       <div className="home-left">
@@ -56,15 +62,14 @@ const BankSection = () => {
       </div>
 
       <div className="home-right">
-        <h1 className="home-title">Easy Deposit</h1>
+        <h1 className="home-title">{t('easyDeposit')}</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          {t('depositDesc')}
         </p>
-        <button>Deposit Now <FaChevronRight className='home-button-icon'/></button>
+        <button onClick={whatsappLink}>{t('depositNow')} <FaChevronRight className='home-button-icon'/></button>
       </div>
     </section>
   );
 };
 
-export default BankSection;
+export default withNamespaces()(BankSection);

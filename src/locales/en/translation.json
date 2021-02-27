@@ -39,5 +39,11 @@
     "seemore":"See More",
     "bonusWeekly":"Weekly 5%",
     "bonusWeeklyDesc":"Deposit Weekly, you will get 5% rebate",
-    "depositMethod":"DEPOSIT METHOD"
+    "depositMethod":"DEPOSIT METHOD",
+    "playNow":"Play Now",
+    "gameDesc":"Play the Coolest Online Casino Games in {{compName}}, There are lots of fun and interesting slot games for players to choose and they will not get bored with it.",
+    "easyDeposit":"Easy Deposit",
+    "depositNow":"Deposit Now",
+    "depositDesc":"Deposit with your telecommunication provider or bank, and just click the button below",
+    "applyNow":"Apply Now"
 }

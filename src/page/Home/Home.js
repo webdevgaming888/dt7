@@ -37,14 +37,14 @@ const Home = ({ t }) => {
           name="description"
           content="Dato777 is one of the leading online betting sites in Malaysia"
         />
-        <link rel="canonical" href="https://judibang99.net/" />
+        <link rel="canonical" href="https://dato777.net/" />
         <meta property="og:title" content={window.compName} />
         <meta
           property="og:description"
           content="Dato777 is one of the leading online betting sites in Malaysia"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://judibang99.net/" />
+        <meta property="og:url" content="https://dato777.net/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Dato777" />
       </Helmet>

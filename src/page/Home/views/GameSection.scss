@@ -13,6 +13,9 @@
   width: 240px;
   height: 100%;
 }
+.home-button-icon{
+  display: none;
+}
 .home-right {
   width: 60%;
   height: 100%;
@@ -41,7 +44,7 @@
   p {
     color: #adadad;
   }
-  button {
+  a,button {
     transition: 0.5s;
     background: repeating-linear-gradient(
         75grad,
@@ -57,6 +60,13 @@
     font-weight: bold;
     animation: mymove 5s infinite linear;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    &:hover{
+      text-decoration: none
+    }
   }
 }
 .home-section2 {
@@ -80,7 +90,7 @@
       color: #adadad;
       text-align: right;
     }
-    button {
+    a,button {
       background: repeating-linear-gradient(
           75grad,
           rgba(0, 0, 0, 0) 25%,
@@ -118,6 +128,9 @@
   .swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right{
     background-image: none ;
   }
+  .home-button-icon{
+    display: block;
+  }
   .home-section1,
   .home-section2 {
     flex-direction: column;
@@ -139,8 +152,8 @@
       p {
         display: none;
       }
-      button {
-        width: 6rem;
+      a,button {
+        width: 7rem;
         height: 1.3rem;
         font-size: 0.7rem;
         background: none;

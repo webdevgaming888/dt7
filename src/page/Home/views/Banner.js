@@ -1,6 +1,5 @@
 import React from "react";
 import { withNamespaces } from "react-i18next";
-// import Slider from "react-slick";
 import "./Banner.scss";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,7 +7,6 @@ import "swiper/swiper.scss";
 import logo from "../../../assests/navigationbar/logo.jpg"
 import SwiperCore, { Autoplay } from "swiper";
 SwiperCore.use([Autoplay]);
-// import 'react-id-swiper/lib/styles/scss/swiper.scss';
 const Banner = ({ banner, t }) => {
   return (
     <Swiper
@@ -30,7 +28,7 @@ const Banner = ({ banner, t }) => {
                <h1>{t(img.title)}</h1>
               <p>{t(img.content)}</p>
               <div className='banner-button-group'>
-                <button>Apply Now</button>
+                <button>{t('applyNow')}</button>
               <Link to={`${process.env.PUBLIC_URL}/promotion`}>
                 {t("seemore")}
               </Link>

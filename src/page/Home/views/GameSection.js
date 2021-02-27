@@ -4,19 +4,26 @@ import Swiper from "react-id-swiper";
 import "swiper/components/effect-coverflow/effect-coverflow.scss";
 import SwiperCore, { Autoplay, EffectCoverflow } from "swiper";
 import { GameList } from "../../Game/GameImageData";
-import { FaChevronRight } from "react-icons/fa"
+import { FaChevronRight } from "react-icons/fa";
+import { withNamespaces } from "react-i18next";
+import { Link } from "react-router-dom";
+
 SwiperCore.use([Autoplay, EffectCoverflow]);
 
-const GameSection = () => {
+const GameSection = ({ t }) => {
+  function backtoTop() {
+    window.scrollTo(0, 0);
+  }
   return (
     <section className="home-section1">
       <div className="home-left">
-        <h1 className="home-title">Games</h1>
+        <h1 className="home-title">{t("game")}</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+        {t("gameDesc", { compName: window.compName })}
         </p>
-        <button>Play Now <FaChevronRight className='home-button-icon'/></button>
+        <Link onClick={backtoTop} to={`${process.env.PUBLIC_URL}/games`}>
+        {t("playNow")} <FaChevronRight className="home-button-icon" />
+        </Link>
       </div>
       <div className="home-right">
         <Swiper
@@ -43,7 +50,6 @@ const GameSection = () => {
                   className="game-logo"
                   alt={game.gameName}
                 />
-                ;{" "}
               </div>
             );
           })}
@@ -53,4 +59,4 @@ const GameSection = () => {
   );
 };
 
-export default GameSection;
+export default withNamespaces()(GameSection);
