@@ -1,10 +1,10 @@
-import React, {useEffect,useState} from "react";
+import React from "react";
 import "./GameSection.scss";
 import Swiper from "react-id-swiper";
 import "swiper/components/effect-coverflow/effect-coverflow.scss";
 import SwiperCore, { Autoplay } from "swiper";
 import { GameList } from "../../Game/GameImageData";
-import { FaChevronRight } from "react-icons/fa";
+// import { FaChevronRight } from "react-icons/fa";
 import { withNamespaces } from "react-i18next";
 import { Link } from "react-router-dom";
 import { FaGamepad } from "react-icons/fa"
@@ -15,12 +15,6 @@ const GameSection = ({ t }) => {
   function backtoTop() {
     window.scrollTo(0, 0);
   }
-
-  useEffect(() => {
-
-
-    
-  }, [window.innerWidth])
   
   var slideView =  window.innerWidth >= 768 ? 5 :3 ;
   var swiperSpace =  window.innerWidth < 768 ? 20 : 0 ;
@@ -34,7 +28,7 @@ const GameSection = ({ t }) => {
         {t("playNow")} <FaChevronRight className="home-button-icon" />
         </Link> */}
 
-        <Link to={`${process.env.PUBLIC_URL}/games`} className='home-game-link'>
+        <Link to={`${process.env.PUBLIC_URL}/games`} className='home-game-link' onClick={backtoTop}>
         <Swiper
           autoplay={{
             delay: 2000,

@@ -4,7 +4,7 @@ import "./Banner.scss";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
-import logo from "../../../assests/navigationbar/logo.png"
+// import logo from "../../../assests/navigationbar/logo.png"
 import SwiperCore, { Autoplay } from "swiper";
 SwiperCore.use([Autoplay]);
 const Banner = ({ banner, t }) => {

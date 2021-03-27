@@ -5,17 +5,17 @@ import Jackpot from "./views/Jackpot";
 import banner1 from "../../assests/banner/01.jpg";
 import banner2 from "../../assests/banner/02.jpg";
 import banner3 from "../../assests/banner/03.jpg";
-import GuideStep from "./views/GuideStep";
+// import GuideStep from "./views/GuideStep";
 import WinnerList from "./views/WinnerList";
 import { withNamespaces } from "react-i18next";
 import { Helmet } from "react-helmet";
 import logo from "../../assests/navigationbar/logo.png";
 import GameSection from "./views/GameSection";
 import { Container } from "react-bootstrap";
-import BankSection from "./views/BankSection";
-import { FaUserCircle, FaGamepad } from "react-icons/fa";
-import { RiMoneyDollarCircleFill } from "react-icons/ri";
-import { GiReceiveMoney } from "react-icons/gi";
+// import BankSection from "./views/BankSection";
+// import { FaUserCircle, FaGamepad } from "react-icons/fa";
+// import { RiMoneyDollarCircleFill } from "react-icons/ri";
+// import { GiReceiveMoney } from "react-icons/gi";
 import HomePromo from "./views/HomePromo";
 import HomeGame from "./views/HomeGame";
 import InfoCentre from "./views/InfoCentre";
@@ -36,27 +36,27 @@ const Home = ({ t }) => {
       content: "bonusRecommendDesc",
     },
   ]);
-  const [guide] = useState([
-    {
-      id: 1,
-      title: "register",
-      content: "registerdesc",
-      icon: <FaUserCircle />,
-    },
-    {
-      id: 2,
-      title: "deposit",
-      content: "depositdesc",
-      icon: <RiMoneyDollarCircleFill />,
-    },
-    { id: 3, title: "playwin", content: "playwindesc", icon: <FaGamepad /> },
-    {
-      id: 4,
-      title: "withdraw",
-      content: "withdrawdesc",
-      icon: <GiReceiveMoney />,
-    },
-  ]);
+  // const [guide] = useState([
+  //   {
+  //     id: 1,
+  //     title: "register",
+  //     content: "registerdesc",
+  //     icon: <FaUserCircle />,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "deposit",
+  //     content: "depositdesc",
+  //     icon: <RiMoneyDollarCircleFill />,
+  //   },
+  //   { id: 3, title: "playwin", content: "playwindesc", icon: <FaGamepad /> },
+  //   {
+  //     id: 4,
+  //     title: "withdraw",
+  //     content: "withdrawdesc",
+  //     icon: <GiReceiveMoney />,
+  //   },
+  // ]);
   const [winnerList, setWinnerList] = useState([]);
 
   useEffect(() => {

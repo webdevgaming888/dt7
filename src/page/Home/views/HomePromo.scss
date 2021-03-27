@@ -2,8 +2,14 @@
     width: 60%;
     height: 20rem;
     .swiper-container{
-        height: 88%;
+        height: 89%;
     }
+}
+.home-promo-slide{
+    background: #979797;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (max-width:768px){
     .home-promo{
