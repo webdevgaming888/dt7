@@ -1,5 +1,11 @@
 .login {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.login-right{
+  display: flex;
   align-items: center;
   position: relative;
 }
@@ -106,9 +112,28 @@
     }
   }
 }
-
+.register-btn{
+  @extend .login-btn;
+  background: repeating-linear-gradient(
+    75grad,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(255, 255, 255, 0.6) 26%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ),
+  #333;
+  color: gold;
+}
+.header-time{
+  color: #c4c4c4;
+  margin-top: .8rem;
+  font-size: .9rem;
+}
 @media screen and (max-width: 768px) {
   .login-btn {
+    display: none;
+  }
+  .header-time{
     display: none;
   }
 }

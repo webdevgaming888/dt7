@@ -6,7 +6,7 @@
   z-index: 3;
   position: relative;
   background: #000;
-  height: 10vh;
+ flex-direction: column;
 }
 .header-container{
   display: flex;
@@ -16,4 +16,7 @@
 .header-left{
   display: flex;
   align-items: center;
+}
+.navbar-sec{
+  background: gold;
 }

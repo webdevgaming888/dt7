@@ -2,7 +2,7 @@
 //   width: 100% !important;
 //   max-width: 100% !important;
 // }
-
+@import url('https://fonts.googleapis.com/css?family=Archivo Black');
 .banner-slide {
   width: 100% !important;
   height: 100% !important;
@@ -14,27 +14,32 @@
   .banner-content {
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    bottom: 5%;
     .banner-logo {
       height: 8rem;
       width: 8rem;
     }
     h1 {
-      color: #fff;
-      font-size: 4rem;
+      color: gold;
+      font-size: 3.8rem;
+      margin:0;
+      font-family: 'Archivo Black';
     }
     p {
-      color: #979797;
-      font-size: 2rem;
+      color: #fff;
+      font-size: 1.5rem;
       width: 35%;
       text-align: center;
+    
     }
     .banner-button-group {
-      display: flex;
+      // display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
       button {
@@ -77,11 +82,15 @@
 @media screen and (max-width: 768px) {
   .banner-slide{
     .banner-content {
+      background: rgba(0,0,0,.5);
+      bottom: 0;
+      justify-content: center;
       .banner-logo{
         display: none;
       }
       h1 {
         font-size: 1.3rem;
+        
       }
       p {
         display: none;

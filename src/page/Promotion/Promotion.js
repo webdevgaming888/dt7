@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Promotion.scss";
 import { withNamespaces } from 'react-i18next';
 import { Helmet } from "react-helmet";
-import logo from "../../assests/navigationbar/logo.jpg"
+import logo from "../../assests/navigationbar/logo.png"
 import { Container } from "react-bootstrap";
 
 const Promotion = ({t}) => {

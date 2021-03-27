@@ -1,0 +1,14 @@
+.home-promo{
+    width: 60%;
+    height: 20rem;
+    .swiper-container{
+        height: 88%;
+    }
+}
+@media screen and (max-width:768px){
+    .home-promo{
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+

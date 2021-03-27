@@ -1,47 +1,48 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import "./GameSection.scss";
 import Swiper from "react-id-swiper";
 import "swiper/components/effect-coverflow/effect-coverflow.scss";
-import SwiperCore, { Autoplay, EffectCoverflow } from "swiper";
+import SwiperCore, { Autoplay } from "swiper";
 import { GameList } from "../../Game/GameImageData";
 import { FaChevronRight } from "react-icons/fa";
 import { withNamespaces } from "react-i18next";
 import { Link } from "react-router-dom";
+import { FaGamepad } from "react-icons/fa"
 
-SwiperCore.use([Autoplay, EffectCoverflow]);
+SwiperCore.use([Autoplay]);
 
 const GameSection = ({ t }) => {
   function backtoTop() {
     window.scrollTo(0, 0);
   }
+
+  useEffect(() => {
+
+
+    
+  }, [window.innerWidth])
+  
+  var slideView =  window.innerWidth >= 768 ? 5 :3 ;
+  var swiperSpace =  window.innerWidth < 768 ? 20 : 0 ;
   return (
-    <section className="home-section1">
-      <div className="home-left">
-        <h1 className="home-title">{t("game")}</h1>
-        <p>
-        {t("gameDesc", { compName: window.compName })}
-        </p>
-        <Link onClick={backtoTop} to={`${process.env.PUBLIC_URL}/games`}>
+    <section className="game-section">
+
+        <h1 className="home-title"><FaGamepad className='home-title-icon'/>Latest Game 
+       </h1>
+
+       {/* <Link onClick={backtoTop} to={`${process.env.PUBLIC_URL}/games`}>
         {t("playNow")} <FaChevronRight className="home-button-icon" />
-        </Link>
-      </div>
-      <div className="home-right">
+        </Link> */}
+
         <Link to={`${process.env.PUBLIC_URL}/games`} className='home-game-link'>
         <Swiper
-          effect="coverflow"
-          coverflowEffect={{
-            slideShadows: true,
-            rotate: 20,
-            depth: 100,
-          }}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
             stopOnLastSlide: false,
           }}
-          slidesPerView={3}
-          navigation
-          spaceBetween={60}
+          spaceBetween={swiperSpace}
+          slidesPerView={slideView}
         >
           {GameList.map((game, i) => {
             return (
@@ -55,7 +56,7 @@ const GameSection = ({ t }) => {
             );
           })}
         </Swiper></Link>
-      </div>
+
     </section>
   );
 };

@@ -13,9 +13,37 @@
 .home-list {
   display: flex;
 }
+.home-title {
+  font-size: 1.4rem;
+  color: gold;
+  display: flex;
+  align-items: center;
+}
+.home-title-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 10px;
+}
+.home-content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
 @media screen and (max-width: 768px) {
   .home-list {
     flex-wrap: wrap;
+  }
+  .home-title {
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+    background: linear-gradient(to bottom, #222,#111);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .home-title-icon {
+    width: 1rem;
+    height: 1rem;
   }
 }

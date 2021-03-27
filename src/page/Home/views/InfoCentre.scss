@@ -1,0 +1,112 @@
+.home-infocentre {
+  width: 35%;
+  height: 20rem;
+  margin: 1rem 0 1rem 5%;
+  .swiper-container {
+    height: 100%;
+  }
+}
+.dw-bg{
+  background: url("../../../assests/common/dwbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding:1rem;
+}
+.deposit-withdraw {
+  display: flex;
+  flex-direction: column;
+}
+.deposit-withdraw-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .dw-title {
+    color: gold;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    span {
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+  .dw-time {
+    background: linear-gradient(0deg, #ad7b26, #f6e9a3);
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      width: 3rem;
+      height: 100%;
+      background: #1f1f1f;
+      color: #fff;
+      font-size: 2rem;
+      margin: 1px;
+    }
+  }
+}
+.info-withdraw{
+    margin-top: 1rem;
+}
+.info-contact-bg{
+  background: url("../../../assests/common/contactbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.info-contact{
+  display: flex;
+  flex-direction: column;
+}
+.info-contact-content{
+  height: 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  margin-right: 1rem;
+  margin-bottom: 1.2rem;
+  svg{
+    width: 1.4rem;
+    height: 1.4rem;
+    color: gold;
+  }
+}
+.info-contact-logo{
+  width: 7rem;
+  height: 7rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+.info-contact-no{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  cursor: pointer;
+  span{
+    font-size: .8rem;
+    color: #8b8b8b;
+  }
+}
+@media screen and (max-width:768px){
+  .home-infocentre {
+    width: 100%;
+    margin: 0;
+
+    height: 100%;
+  }
+  .info-contact-bg,.dw-bg{
+    min-height: 22rem;
+  }
+}

@@ -1,0 +1,34 @@
+.home-game{
+    width: 60%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.home-game-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        filter: grayscale(100%);
+        transition: 0.3s;
+        width: 13rem;
+        height: 10rem;
+        &:hover{
+        filter: grayscale(0%);
+
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .home-game{
+        width: 100%;
+    }
+    .home-game-content{
+        img{
+            width: 50%;
+            height: 10rem;
+            filter: grayscale(0%);
+        }
+    }
+}

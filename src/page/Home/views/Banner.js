@@ -4,7 +4,7 @@ import "./Banner.scss";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
-import logo from "../../../assests/navigationbar/logo.jpg"
+import logo from "../../../assests/navigationbar/logo.png"
 import SwiperCore, { Autoplay } from "swiper";
 SwiperCore.use([Autoplay]);
 const Banner = ({ banner, t }) => {
@@ -28,7 +28,6 @@ const Banner = ({ banner, t }) => {
           <SwiperSlide key={i} className='banner-slide'>
           {/* <div key={img.id} className="banner"> */}
             {img.title &&<div className="banner-content">
-              <img src={logo} className='banner-logo' alt={window.compName} />
                <h1>{t(img.title)}</h1>
               <p>{t(img.content)}</p>
               <div className='banner-button-group'>

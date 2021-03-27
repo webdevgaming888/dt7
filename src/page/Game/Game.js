@@ -2,7 +2,7 @@ import React from "react";
 import "./Game.scss";
 import { withNamespaces } from "react-i18next";
 import { Helmet } from "react-helmet";
-import logo from "../../assests/navigationbar/logo.jpg";
+import logo from "../../assests/navigationbar/logo.png";
 import { GameList } from "./GameImageData";
 import { Container } from "react-bootstrap";
 const Game = ({ t }) => {

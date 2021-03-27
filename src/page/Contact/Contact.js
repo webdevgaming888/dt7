@@ -3,7 +3,7 @@ import { withNamespaces } from "react-i18next";
 import "./Contact.scss";
 import { FaWhatsapp, FaTelegram, FaPhone } from "react-icons/fa";
 import { Helmet } from "react-helmet";
-import logo from "../../assests/navigationbar/logo.jpg"
+import logo from "../../assests/navigationbar/logo.png"
 import { Container } from "react-bootstrap";
 
 const Contact = ({ t }) => {

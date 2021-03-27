@@ -1,22 +1,22 @@
 nav {
   display: flex;
   align-items: center;
-  margin-left: 2rem;
 }
 nav a {
-  color: #f8e680;
+  color: #000;
   text-decoration: none;
   // padding: 5px 15px;
   font-size: 1rem;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 6rem;
+  align-items: flex-start;
+  padding: .5rem 1rem;
   font-weight: bold;
   &:hover {
     text-decoration: none;
-    color: #ffff00;
+    color: gold;
+    background: #000;
   }
 }
 @media screen and (max-width: 768px) {

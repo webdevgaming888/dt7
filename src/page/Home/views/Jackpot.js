@@ -12,13 +12,12 @@ const Jackpot = () => {
   }, [odometerValue]);
 
   return (
-    <div className="jackpot">
-      <h1 className='jackpot-title'>{window.compName} JACKPOT</h1>
+    <section className="jackpot">
       <div className='meter'>
         <span className='dollar'>$</span>
         <Odometer format="ddd,ddd,ddd" duration={3000} value={odometerValue} />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,14 +1,14 @@
 import React from "react";
 import "./WinnerList.scss";
 import { withNamespaces } from "react-i18next";
-
-const WinnerList = ({ list, depositList, t }) => {
+import winnerIcon from "../../../assests/common/jackpotIcon.png"
+const WinnerList = ({ list, t }) => {
   return (
-    <>
       <div className="winner-list">
-        <div className="title">
+        <h1 className="home-title">
+          <img src={winnerIcon} alt="777"  className='home-title-icon'/>
           {t("topwinner")}
-        </div>
+        </h1>
         <div className="list-header">
           <span className="list-date">{t("date")}</span>
           <span className="list-phone">{t("phone")}</span>
@@ -29,7 +29,6 @@ const WinnerList = ({ list, depositList, t }) => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 export default withNamespaces()(WinnerList);

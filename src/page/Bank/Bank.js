@@ -2,7 +2,7 @@ import React from "react";
 import { withNamespaces } from "react-i18next";
 import "./Bank.scss";
 import { Helmet } from "react-helmet";
-import logo from "../../assests/navigationbar/logo.jpg"
+import logo from "../../assests/navigationbar/logo.png"
 import { BankList, WalletList} from "./BankData";
 import { Container } from "react-bootstrap";
 const Bank = ({ t }) => {

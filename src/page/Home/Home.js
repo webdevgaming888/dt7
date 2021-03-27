@@ -1,33 +1,85 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.scss";
 import Banner from "./views/Banner";
+import Jackpot from "./views/Jackpot";
 import banner1 from "../../assests/banner/01.jpg";
 import banner2 from "../../assests/banner/02.jpg";
 import banner3 from "../../assests/banner/03.jpg";
 import GuideStep from "./views/GuideStep";
+import WinnerList from "./views/WinnerList";
 import { withNamespaces } from "react-i18next";
 import { Helmet } from "react-helmet";
-import logo from "../../assests/navigationbar/logo.jpg";
+import logo from "../../assests/navigationbar/logo.png";
 import GameSection from "./views/GameSection";
 import { Container } from "react-bootstrap";
 import BankSection from "./views/BankSection";
 import { FaUserCircle, FaGamepad } from "react-icons/fa";
-import { RiMoneyDollarCircleFill } from "react-icons/ri"
+import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { GiReceiveMoney } from "react-icons/gi";
+import HomePromo from "./views/HomePromo";
+import HomeGame from "./views/HomeGame";
+import InfoCentre from "./views/InfoCentre";
 
 const Home = ({ t }) => {
   const [banner] = useState([
-    {id: 1, src: banner1, title: "bonusWelcome", content: "bonusWelcomeDesc"},
-    {id: 2, src: banner2, title: "bonusUnlimited", content: "bonusUnlimitedDesc"},
-    {id: 3, src: banner3, title: "bonusRecommend", content: "bonusRecommendDesc"},
+    { id: 1, src: banner1, title: "bonusWelcome", content: "bonusWelcomeDesc" },
+    {
+      id: 2,
+      src: banner2,
+      title: "bonusUnlimited",
+      content: "bonusUnlimitedDesc",
+    },
+    {
+      id: 3,
+      src: banner3,
+      title: "bonusRecommend",
+      content: "bonusRecommendDesc",
+    },
   ]);
   const [guide] = useState([
-    { id: 1, title: "register", content: "registerdesc", icon:<FaUserCircle/> },
-    { id: 2, title: "deposit", content: "depositdesc", icon:<RiMoneyDollarCircleFill /> },
-    { id: 3, title: "playwin", content: "playwindesc", icon:<FaGamepad /> },
-    { id: 4, title: "withdraw", content: "withdrawdesc", icon:<GiReceiveMoney /> },
+    {
+      id: 1,
+      title: "register",
+      content: "registerdesc",
+      icon: <FaUserCircle />,
+    },
+    {
+      id: 2,
+      title: "deposit",
+      content: "depositdesc",
+      icon: <RiMoneyDollarCircleFill />,
+    },
+    { id: 3, title: "playwin", content: "playwindesc", icon: <FaGamepad /> },
+    {
+      id: 4,
+      title: "withdraw",
+      content: "withdrawdesc",
+      icon: <GiReceiveMoney />,
+    },
   ]);
+  const [winnerList, setWinnerList] = useState([]);
 
+  useEffect(() => {
+    let arr = [];
+    for (let index = 0; index < 100; index++) {
+      let obj = {};
+      let m = Math.floor(Math.random() * 10) + 1;
+      let d = Math.floor(Math.random() * 28) + 1;
+      let h = Math.floor(Math.random() * 23) + 1;
+      let s = Math.floor(Math.random() * 59) + 1;
+
+      obj["id"] = index;
+      obj["year"] = "2020";
+      obj["month"] = m < 10 ? "0" + m : m;
+      obj["date"] = d < 10 ? "0" + d : d;
+      obj["hour"] = h < 10 ? "0" + h : h;
+      obj["seconds"] = s < 10 ? "0" + s : s;
+      obj["phone"] = "******" + Math.floor(1000 + Math.random() * 9000);
+      obj["amount"] = Math.floor(100 + Math.random() * 5000).toFixed(2);
+      arr.push(obj);
+    }
+    setWinnerList({ arr });
+  }, []);
   return (
     <>
       <Helmet>
@@ -51,21 +103,28 @@ const Home = ({ t }) => {
       <section className="homepage">
         <Banner banner={banner} />
         <Container>
-        <GameSection />
+          <Jackpot />
+          <GameSection />
+          <div className="home-content">
+          <HomeGame />
+          <InfoCentre />
+            <HomePromo />
+            {winnerList !== undefined &&  (
+            <WinnerList list={winnerList} />
+          )}
+       
+          </div>
+          {/*
         <BankSection />
-        <GuideStep guide={guide} />
+        <GuideStep guide={guide} /> */}
         </Container>
-  
-        {/* <Jackpot />
+
+        {/* 
         <div className="home-list">
         <SmallSlider smallBanner={smallBanner}/>
 
-          {winnerList !== undefined && depositList !== undefined && (
-            <WinnerList list={winnerList} depositList={depositList} />
-          )}
+         
         </div> */}
-        
-
       </section>
     </>
   );
