@@ -95,6 +95,14 @@ a:hover{
   background: gold !important;
 }
 
+@keyframes mymove {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 0px;
+  }
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: flex;
