@@ -5,8 +5,8 @@ import Jackpot from "./views/Jackpot";
 import banner1 from "../../assests/banner/01.jpg";
 import banner2 from "../../assests/banner/02.jpg";
 // import banner3 from "../../assests/banner/03.jpg";
-import mobileAccepted from "../../assests/banner/mobile-accepted.PNG"
-import mobileWelcome from "../../assests/banner/mobile-welcome.png"
+import mobileAccepted from "../../assests/banner/mobile-accepted.png";
+import mobileWelcome from "../../assests/banner/mobile-welcome.png";
 import promo1 from "../../assests/common/promo1.jpeg";
 import promo2 from "../../assests/common/promo2.jpeg";
 import GuideStep from "./views/GuideStep";
@@ -17,21 +17,27 @@ import logo from "../../assests/navigationbar/logo.png";
 import GameSection from "./views/GameSection";
 import { Container } from "react-bootstrap";
 // import BankSection from "./views/BankSection";
-import step1 from "../../assests/common/register.png"
-import step2 from "../../assests/common/deposit.png"
-import step3 from "../../assests/common/play.png"
-import step4 from "../../assests/common/win.png"
+import step1 from "../../assests/common/register.png";
+import step2 from "../../assests/common/deposit.png";
+import step3 from "../../assests/common/play.png";
+import step4 from "../../assests/common/win.png";
 import HomePromo from "./views/HomePromo";
 // import HomeGame from "./views/HomeGame";
 import InfoCentre from "./views/InfoCentre";
 
 const Home = ({ t }) => {
   const [banner] = useState([
-    { id: 1, src: banner1, mobileSrc: mobileWelcome, title: "bonusWelcome", content: "bonusWelcomeDesc" },
+    {
+      id: 1,
+      src: banner1,
+      mobileSrc: mobileWelcome,
+      title: "bonusWelcome",
+      content: "bonusWelcomeDesc",
+    },
     {
       id: 2,
       src: banner2,
-      mobileSrc:mobileAccepted ,
+      mobileSrc: mobileAccepted,
       title: "bonusUnlimited",
       content: "bonusUnlimitedDesc",
     },
@@ -44,15 +50,15 @@ const Home = ({ t }) => {
     // },
   ]);
   const [guide] = useState([
-    { id: 1, title: "register", content: "registerdesc", src:step1 },
-    { id: 2, title: "deposit", content: "depositdesc", src:step2 },
-    { id: 3, title: "playwin", content: "playwindesc", src:step3 },
-    { id: 4, title: "withdraw", content: "withdrawdesc", src:step4 },
+    { id: 1, title: "register", content: "registerdesc", src: step1 },
+    { id: 2, title: "deposit", content: "depositdesc", src: step2 },
+    { id: 3, title: "playwin", content: "playwindesc", src: step3 },
+    { id: 4, title: "withdraw", content: "withdrawdesc", src: step4 },
   ]);
   const [promo] = useState([
-    { id: 1, src:promo1},
-    { id: 2, src:promo2}
-  ])
+    { id: 1, src: promo1 },
+    { id: 2, src: promo2 },
+  ]);
   const [winnerList, setWinnerList] = useState([]);
 
   useEffect(() => {
@@ -101,16 +107,17 @@ const Home = ({ t }) => {
         <Container>
           <Jackpot />
           <div className="home-content">
-          <HomePromo promo={promo}/>
-          {winnerList !== undefined &&  (
-            <WinnerList list={winnerList} />
-          )}
-          <GuideStep guide={guide} />
-          {/* <HomeGame /> */}
+            <div className="guide-mobile">
+              <GuideStep guide={guide} />
+            </div>
+            <HomePromo promo={promo} />
+            {winnerList !== undefined && <WinnerList list={winnerList} />}
+            <div className="guide-desktop">
+              <GuideStep guide={guide} />
+            </div>
+            {/* <HomeGame /> */}
 
-          <InfoCentre />
-
-       
+            <InfoCentre />
           </div>
           <GameSection />
 

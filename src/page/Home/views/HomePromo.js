@@ -7,9 +7,9 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import { FaGift } from "react-icons/fa";
-
+import {withNamespaces} from "react-i18next";
 SwiperCore.use([Pagination, Autoplay]);
-const HomePromo = ({ promo }) => {
+const HomePromo = ({ promo, t }) => {
   // const [slideWidth, setSlideWidth] = useState(0);
   // const [slideHeight, setSlideHeight] = useState(0);
   // const ref = useRef(null);
@@ -22,7 +22,7 @@ const HomePromo = ({ promo }) => {
     <div className="home-promo">
       <h1 className="home-title">
         <FaGift className="home-title-icon" />
-        Latest Promotion
+        {t('latestPromotion')}
       </h1>
 
       <Swiper
@@ -48,4 +48,4 @@ const HomePromo = ({ promo }) => {
   );
 };
 
-export default HomePromo;
+export default withNamespaces()(HomePromo);

@@ -1,7 +1,9 @@
 import React from "react";
 import "./GuideStep.scss";
 import {withNamespaces} from "react-i18next";
-import { AiFillQuestionCircle } from "react-icons/ai"
+import { AiFillQuestionCircle } from "react-icons/ai";
+
+
 const GuideStep = ({ guide, t }) => {
   const whatsappLink = (e) => {
     e.preventDefault();
@@ -10,7 +12,7 @@ const GuideStep = ({ guide, t }) => {
   return (
 
       <div className='home-guide'>
-        <h1 className='home-title'> <AiFillQuestionCircle className='home-title-icon'/>How to play?</h1>
+        <h1 className='home-title'> <AiFillQuestionCircle className='home-title-icon'/>{t('howToPlay')}</h1>
         <div className='home-guide-content'>
         {guide.map((step) => {
         return (

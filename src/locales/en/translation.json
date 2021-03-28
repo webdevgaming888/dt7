@@ -37,13 +37,17 @@
     "bankDesc":"We support multiple bank deposit, if you find out your bank doesn't include in the list below, kindly contact us:",
     "ewalletDesc":"We also support e-wallet deposit, if you find out your e-wallet doesn't include in our list, please contact us:",
     "seemore":"See More",
-    "bonusWeekly":"Weekly 5%",
-    "bonusWeeklyDesc":"Deposit Weekly, you will get 5% rebate",
+    "bonusWeekly":"Daily Rebate 10%",
+    "bonusWeeklyDesc":"Deposit daily, you will get 10% rebate",
     "depositMethod":"DEPOSIT METHOD",
     "playNow":"Play Now",
     "gameDesc":"Play the Coolest Online Casino Games in {{compName}}, There are lots of fun and interesting slot games for players to choose and they will not get bored with it.",
     "easyDeposit":"Easy Deposit",
     "depositNow":"Deposit Now",
     "depositDesc":"Deposit with your telecommunication provider or bank, and just click the button below",
-    "applyNow":"Apply Now"
+    "applyNow":"Apply Now",
+    "latestPromotion":"Latest Promotion",
+    "howToPlay":"How to play?",
+    "infoCentre":"Info Centre"
+
 }

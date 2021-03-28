@@ -7,9 +7,11 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import { FaInfoCircle, FaWhatsapp, FaTelegram, FaPhone } from "react-icons/fa";
+import {withNamespaces} from "react-i18next";
+
 SwiperCore.use([Autoplay]);
 
-const InfoCentre = () => {
+const InfoCentre = ({t}) => {
   const telegramLink = (e) => {
     e.preventDefault();
     window.location.href = window.telegram;
@@ -25,7 +27,7 @@ const InfoCentre = () => {
     <div className="home-infocentre">
       <h1 className="home-title">
         <FaInfoCircle className="home-title-icon" />
-        Info Centre
+        {t('infoCentre')}
       </h1>
       <Swiper
         slidesPerView={1}
@@ -69,7 +71,7 @@ const InfoCentre = () => {
           <div className="deposit-withdraw">
             <div className="deposit-withdraw-top">
               <div className="dw-title">
-                Deposit<span>Average Time (Min)</span>
+                {t('deposit')}<span>Average Time (Min)</span>
               </div>
               <div className="dw-time">
                 <span>0</span>
@@ -81,7 +83,7 @@ const InfoCentre = () => {
           <div className="deposit-withdraw info-withdraw">
             <div className="deposit-withdraw-top">
               <div className="dw-title">
-                WIthdrawal<span>Average Time (Min)</span>
+                {t('withdraw')}<span>Average Time (Min)</span>
               </div>
               <div className="dw-time">
                 <span>0</span>
@@ -108,4 +110,4 @@ const InfoCentre = () => {
   );
 };
 
-export default InfoCentre;
+export default withNamespaces()(InfoCentre);

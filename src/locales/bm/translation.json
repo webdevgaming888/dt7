@@ -37,13 +37,17 @@
     "bankDesc":"Kami menyokong banyak deposit bank, jika anda mengetahui bahawa bank anda tidak termasuk dalam senarai di bawah, silakan hubungi kami:",
     "ewalletDesc":"Kami juga menyokong deposit e-wallet, jika anda mengetahui e-dompet anda tidak termasuk dalam senarai kami, sila hubungi kami:",
     "seemore":"Lihat Lagi",
-    "bonusWeekly":"5% Mingguan",
-    "bonusWeeklyDesc":"Deposit Mingguan, anda akan mendapat rebat 5%",
+    "bonusWeekly":"10% Rebat Harian",
+    "bonusWeeklyDesc":"Deposit Harian, anda akan mendapat rebat 10%",
     "depositMethod":"KAEDAH DEPOSIT",
     "playNow":"Main Sekarang",
     "gameDesc":"Mainkan Permainan Kasino Dalam Talian Paling Keren di {{compName}}, Terdapat banyak permainan slot yang menyeronokkan dan menarik untuk dipilih oleh pemain dan awak tidak akan bosan dengannya.",
     "easyDeposit":"Deposit",
     "depositNow":"Deposit Sekarang",
     "depositDesc":"Deposit dengan penyedia telekomunikasi atau bank anda, dan klik sahaja butang di bawah",
-    "applyNow":"Memohon"
+    "applyNow":"Memohon",
+    "latestPromotion":"Promosi Terkini",
+    "howToPlay":"Cara bermain",
+    "infoCentre":"Pusat Maklumat"
+    
 }

@@ -29,8 +29,25 @@
   width: 100%;
   flex-wrap: wrap;
 }
+.guide-mobile{
+ display: none;
+ margin-bottom: 1rem;
+
+}
+.guide-desktop{
+  display: flex;
+  width: 60%;
+  margin-bottom: 1rem;
+
+}
 
 @media screen and (max-width: 768px) {
+  .guide-mobile{
+    display: flex;
+   }
+   .guide-desktop{
+     display: none;
+   }
   .home-list {
     flex-wrap: wrap;
   }

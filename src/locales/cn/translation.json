@@ -37,14 +37,17 @@
     "bankDesc":"我们支持多种银行充值，如果您发现您的银行不在以下列表中，请与我们联系:",
     "ewalletDesc":"我们还支持电子钱包充值，如果您发现自己的电子钱包不包含在我们的清单中，请与我们联系",
     "seemore":"查看更多",
-    "bonusWeekly":"每周5%回扣",
-    "bonusWeeklyDesc":"每周充值，您将获得5％的回扣",
+    "bonusWeekly":"每日10%回扣",
+    "bonusWeeklyDesc":"每日充值，您将获得10％的回扣",
     "depositMethod":"充值方式",
     "playNow":"立即游玩",
     "gameDesc":"{{compName}}中最酷的在线赌场游戏，有很多有趣的游戏供玩家选择，你们不会感到无聊",
     "easyDeposit":"快速充值",
     "depositNow":"立即充值",
     "depositDesc":"可使用Digi Maxis等等来进行充值或使用各种银行转账来进行充值,只需点击以下的按钮",
-    "applyNow":"马上申请"
+    "applyNow":"马上申请",
+    "latestPromotion":"最新优惠",
+    "howToPlay":"怎么开始玩?",
+    "infoCentre":"资讯中心"
 
 }
