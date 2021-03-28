@@ -38,8 +38,8 @@ export const GameList = [
   {
     id: 2,
     gameName: "918KAYA",
-    androidURL: "http://d.88ifun.com/",
-    iosURL: "http://d.88ifun.com/",
+    androidURL: "https://d.889ifun.com/",
+    iosURL: "https://d.889ifun.com/",
     agentURL: "https://k.889efun.com/login",
     gameLogo: kaya,
   },
@@ -54,8 +54,8 @@ export const GameList = [
   {
     id: 4,
     gameName: "MEGA888",
-    androidURL: "http://m.mega385.com/mega/index.html",
-    iosURL: "http://m.mega385.com/mega/index.html",
+    androidURL: "http://mega888download.com/",
+    iosURL: "http://mega888download.com/",
     agentURL: "https://k3.xigift.com/201222/login.html",
     gameLogo: mega888,
   },
