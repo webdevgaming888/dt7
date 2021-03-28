@@ -5,8 +5,8 @@ import Jackpot from "./views/Jackpot";
 import banner1 from "../../assests/banner/01.jpg";
 import banner2 from "../../assests/banner/02.jpg";
 // import banner3 from "../../assests/banner/03.jpg";
-import mobileAccepted from "../../assests/banner/mobile-accepted.jpg"
-import mobileWelcome from "../../assests/banner/mobile-welcome.jpg"
+import mobileAccepted from "../../assests/banner/mobile-accepted.PNG"
+import mobileWelcome from "../../assests/banner/mobile-welcome.png"
 import promo1 from "../../assests/common/promo1.jpeg";
 import promo2 from "../../assests/common/promo2.jpeg";
 import GuideStep from "./views/GuideStep";
@@ -102,14 +102,14 @@ const Home = ({ t }) => {
           <Jackpot />
           <div className="home-content">
           <HomePromo promo={promo}/>
-
-          <InfoCentre />
+          {winnerList !== undefined &&  (
+            <WinnerList list={winnerList} />
+          )}
           <GuideStep guide={guide} />
           {/* <HomeGame /> */}
 
-            {winnerList !== undefined &&  (
-            <WinnerList list={winnerList} />
-          )}
+          <InfoCentre />
+
        
           </div>
           <GameSection />

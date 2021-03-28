@@ -1,7 +1,7 @@
 .winner-list{
   width: 35%;
   color: #fff;
-  height: 20rem;
+  height: 30.6rem;
   overflow: hidden;
   margin-left: 5%;
   margin-bottom: 1rem;
@@ -58,6 +58,7 @@
 @media screen and (max-width: 768px) {
   .winner-list {
     width: 100%;
+    height: 20rem;
   }
   .winner-list {
     margin-left: 0;
