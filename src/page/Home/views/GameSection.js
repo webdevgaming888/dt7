@@ -21,7 +21,7 @@ const GameSection = ({ t }) => {
   return (
     <section className="game-section">
 
-        <h1 className="home-title"><FaGamepad className='home-title-icon'/>Latest Game 
+        <h1 className="home-title"><FaGamepad className='home-title-icon'/>{t('latestGame')}
        </h1>
 
        {/* <Link onClick={backtoTop} to={`${process.env.PUBLIC_URL}/games`}>
