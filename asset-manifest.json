@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dt7/static/css/main.2bc3b9f1.chunk.css",
-    "main.js": "/dt7/static/js/main.291ab500.chunk.js",
-    "main.js.map": "/dt7/static/js/main.291ab500.chunk.js.map",
+    "main.css": "/dt7/static/css/main.89fed675.chunk.css",
+    "main.js": "/dt7/static/js/main.dac05e55.chunk.js",
+    "main.js.map": "/dt7/static/js/main.dac05e55.chunk.js.map",
     "runtime-main.js": "/dt7/static/js/runtime-main.d566e33a.js",
     "runtime-main.js.map": "/dt7/static/js/runtime-main.d566e33a.js.map",
     "static/css/2.3b16ce14.chunk.css": "/dt7/static/css/2.3b16ce14.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.1eefd82a.chunk.js.map": "/dt7/static/js/3.1eefd82a.chunk.js.map",
     "index.html": "/dt7/index.html",
     "static/css/2.3b16ce14.chunk.css.map": "/dt7/static/css/2.3b16ce14.chunk.css.map",
-    "static/css/main.2bc3b9f1.chunk.css.map": "/dt7/static/css/main.2bc3b9f1.chunk.css.map",
+    "static/css/main.89fed675.chunk.css.map": "/dt7/static/css/main.89fed675.chunk.css.map",
     "static/js/2.95de30ac.chunk.js.LICENSE.txt": "/dt7/static/js/2.95de30ac.chunk.js.LICENSE.txt",
     "static/media/01.aaf8a196.jpg": "/dt7/static/media/01.aaf8a196.jpg",
     "static/media/02.2b1f6ea8.jpg": "/dt7/static/media/02.2b1f6ea8.jpg",
@@ -30,8 +30,8 @@
     "static/media/logo.ef18ab6b.png": "/dt7/static/media/logo.ef18ab6b.png",
     "static/media/lpe-01.ae80309f.png": "/dt7/static/media/lpe-01.ae80309f.png",
     "static/media/mega888-01.3349fc6c.png": "/dt7/static/media/mega888-01.3349fc6c.png",
-    "static/media/mobile-accepted.233cd861.jpg": "/dt7/static/media/mobile-accepted.233cd861.jpg",
-    "static/media/mobile-welcome.3ddd5c9f.jpg": "/dt7/static/media/mobile-welcome.3ddd5c9f.jpg",
+    "static/media/mobile-accepted.cfa74a41.PNG": "/dt7/static/media/mobile-accepted.cfa74a41.PNG",
+    "static/media/mobile-welcome.e1735653.png": "/dt7/static/media/mobile-welcome.e1735653.png",
     "static/media/newtown-01.11e77944.png": "/dt7/static/media/newtown-01.11e77944.png",
     "static/media/play.6103b86b.png": "/dt7/static/media/play.6103b86b.png",
     "static/media/Promotion.scss": "/dt7/static/media/promo-bg.ca5532d2.jpg",
@@ -49,7 +49,7 @@
     "static/js/runtime-main.d566e33a.js",
     "static/css/2.3b16ce14.chunk.css",
     "static/js/2.95de30ac.chunk.js",
-    "static/css/main.2bc3b9f1.chunk.css",
-    "static/js/main.291ab500.chunk.js"
+    "static/css/main.89fed675.chunk.css",
+    "static/js/main.dac05e55.chunk.js"
   ]
 }
