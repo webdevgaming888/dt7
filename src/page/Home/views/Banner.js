@@ -12,9 +12,10 @@ const Banner = ({ banner, t }) => {
     e.preventDefault();
     window.location.href = window.whatsapp;
   };
+
   return (
     <Swiper
-      pagination={{ clickable: true }}
+      // pagination={{ clickable: true }}
       spaceBetween={0}
       slidesPerView={1}
       autoplay={{
@@ -25,23 +26,27 @@ const Banner = ({ banner, t }) => {
     >
       {banner.map((img, i) => {
         return (
-          <SwiperSlide key={i} className='banner-slide'>
-          {/* <div key={img.id} className="banner"> */}
-            {img.title &&<div className="banner-content">
-               <h1>{t(img.title)}</h1>
-              <p>{t(img.content)}</p>
-              <div className='banner-button-group'>
-                <button onClick={whatsappLink}>{t('applyNow')}</button>
-              <Link to={`${process.env.PUBLIC_URL}/promotion`}>
-                {t("seemore")}
-              </Link>
+          <SwiperSlide key={i} className="banner-slide">
+            {/* <div key={img.id} className="banner"> */}
+            {img.title && (
+              <div className="banner-content">
+                <h1>{t(img.title)}</h1>
+                <p>{t(img.content)}</p>
+                <div className="banner-button-group">
+                  <button onClick={whatsappLink}>{t("applyNow")}</button>
+                  <Link to={`${process.env.PUBLIC_URL}/promotion`}>
+                    {t("seemore")}
+                  </Link>
+                </div>
               </div>
-        
-            </div>}
-            <img src={img.src} alt="banner"/>
-          {/* </div> */}
+            )}
+            {window.innerWidth > 768 ? (
+              <img src={img.src} alt="banner" />
+            ) : (
+              <img src={img.mobileSrc} alt="banner" />
+            )}
+            {/* </div> */}
           </SwiperSlide>
-
         );
       })}
     </Swiper>

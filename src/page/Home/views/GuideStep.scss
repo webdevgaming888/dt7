@@ -1,100 +1,60 @@
 
-.guide-inner {
+.home-guide {
 
   display: flex;
-  height: 18rem;
-  width: 100%;
+  flex-direction: column;
+  height: 20rem;
+  width: 60%;
+  margin-bottom: 1rem;
 }
+.home-guide-content {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
 .guide-card {
-  flex:1;
   display: flex;
-  align-items: center;
-  width: 25%;
-  min-height: 100%;
-  transition: 0.3s ease;
-  background: rgba(0,0,0,.7);
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  &:hover{
-
-    flex-grow: 3;
-      background: url('../../../assests/common/guide-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-    .guide-content{
-      display: block;
-      opacity: 1;
-    }
-    .guide-title{
-      color: #fff;
-    }
-  }
+  justify-content: center;
+  flex-direction: column;
 }
-
+.guide-step {
+  margin-right: .5rem;
+}
 .guide-wrapper {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  position: relative;
-}
-
-
-.guide-icon{
-  width: 5rem;
-  height: 5rem;
-  svg{
-    height: 100%;
-    width: 100%;
-    color: #d3b719;
-  }
-}
-.guide-title {
-  font-size: 1.5rem;
-  color: #d3b719;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #edcc6b;
   font-weight: bold;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  margin: .5rem 0;
 }
-.guide-content {
-  color: #acacac;
-  display: none;
-  opacity: 0;
+
+.guide-img{
+  width: 9rem;
+  height: 9rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  .guide-card {
-    width: 50%;
-    padding: 1rem;
-    flex: none;
-    border: 1px solid #111;
-    .guide-wrapper {
-      width: 100%;
-    }
-  }
-  .guide-inner {
-    flex-wrap: wrap;
+  .home-guide{
+    width: 100%;
     height: 100%;
   }
-  .guide-icon{
-    width: 2rem;
-    height: 2rem;
-    svg{
-      color: #f8e680;
+  .home-guide-content{
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .guide-card {
+    width: 45%;
+    align-items: center;
+    &:nth-child(odd){
+      margin-right: 5%;
     }
   }
-  .guide-title {
-    font-size: 1rem;
-    color: #f8e680;
-  }
-  .guide-content {
-    font-size: .8rem;
-    text-align: center;
+  .guide-img{
+    width: 100%;
+    height: 100%;
   }
 }

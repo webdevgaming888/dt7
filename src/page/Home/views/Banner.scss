@@ -13,7 +13,8 @@
   }
   .banner-content {
     position: absolute;
-    display: flex;
+    // display: flex;
+    display: none;
     justify-content:flex-end;
     align-items: center;
     flex-direction: column;
@@ -82,9 +83,7 @@
 @media screen and (max-width: 768px) {
   .banner-slide{
     .banner-content {
-      background: rgba(0,0,0,.5);
-      bottom: 0;
-      justify-content: center;
+  display: none;
       .banner-logo{
         display: none;
       }

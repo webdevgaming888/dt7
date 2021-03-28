@@ -7,10 +7,20 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import { FaInfoCircle, FaWhatsapp, FaTelegram, FaPhone } from "react-icons/fa";
-import logo from "../../../assests/navigationbar/logo.png";
 SwiperCore.use([Autoplay]);
 
 const InfoCentre = () => {
+  const telegramLink = (e) => {
+    e.preventDefault();
+    window.location.href = window.telegram;
+  };
+  const phoneLink = (e) => {
+    window.open(`tel:${window.phone}`);
+  };
+  const whatsappLink = (e) => {
+    e.preventDefault();
+    window.location.href = window.whatsapp;
+  };
   return (
     <div className="home-infocentre">
       <h1 className="home-title">
@@ -28,26 +38,26 @@ const InfoCentre = () => {
       >
         <SwiperSlide className="info-contact-bg">
           <div className="info-contact">
-            <div className="info-contact-content">
+            {/* <div className="info-contact-content">
               <img
                 src={logo}
                 alt={window.compName}
                 className="info-contact-logo"
               />
-            </div>
-            <div className="info-contact-content">
+            </div> */}
+            <div className="info-contact-content" onClick={whatsappLink}>
               <FaWhatsapp />
               <div className="info-contact-no">
                 {window.phone} <span>(Click to contact now)</span>
               </div>
             </div>
-            <div className="info-contact-content">
+            <div className="info-contact-content" onClick={telegramLink}>
               <FaTelegram />
               <div className="info-contact-no">
                 {window.phone} <span>(Click to contact now)</span>
               </div>
             </div>
-            <div className="info-contact-content">
+            <div className="info-contact-content" onClick={phoneLink}>
               <FaPhone />
               <div className="info-contact-no">
                 {window.phone} <span>(Click to contact now)</span>
