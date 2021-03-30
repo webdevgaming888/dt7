@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import "./Footer.scss";
 import FooterBank from "./views/FooterBank";
-// import WhyUs from "./views/WhyUs";
+import WhyUs from "./views/WhyUs";
 import { BankList, WalletList } from "../../page/Bank/BankData";
 import FooterContact from "./views/FooterContact";
 import { FaWhatsapp, FaTelegram } from "react-icons/fa";
@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Container className="footer-container">
-        {/* <WhyUs  /> */}
+        <WhyUs  />
         <FooterBank bank={BankList} wallet={WalletList} />
         <FooterContact
           contact={contact}
