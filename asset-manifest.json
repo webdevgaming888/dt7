@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dt7/static/css/main.ada1a205.chunk.css",
-    "main.js": "/dt7/static/js/main.c6cb29de.chunk.js",
-    "main.js.map": "/dt7/static/js/main.c6cb29de.chunk.js.map",
+    "main.js": "/dt7/static/js/main.a9bf6ceb.chunk.js",
+    "main.js.map": "/dt7/static/js/main.a9bf6ceb.chunk.js.map",
     "runtime-main.js": "/dt7/static/js/runtime-main.9d9e823d.js",
     "runtime-main.js.map": "/dt7/static/js/runtime-main.9d9e823d.js.map",
     "static/css/2.3b16ce14.chunk.css": "/dt7/static/css/2.3b16ce14.chunk.css",
@@ -36,7 +36,7 @@
     "static/media/mobile-daily.7a89498c.png": "/dt7/static/media/mobile-daily.7a89498c.png",
     "static/media/mobile-recommend.f0a9397e.png": "/dt7/static/media/mobile-recommend.f0a9397e.png",
     "static/media/mobile-welcome.be2c1ff3.png": "/dt7/static/media/mobile-welcome.be2c1ff3.png",
-    "static/media/modal.7a07c5d9.jpg": "/dt7/static/media/modal.7a07c5d9.jpg",
+    "static/media/modal.27ee5b45.jpg": "/dt7/static/media/modal.27ee5b45.jpg",
     "static/media/newtown-01.11e77944.png": "/dt7/static/media/newtown-01.11e77944.png",
     "static/media/play.6103b86b.png": "/dt7/static/media/play.6103b86b.png",
     "static/media/Promotion.scss": "/dt7/static/media/promo-bg.ca5532d2.jpg",
@@ -55,6 +55,6 @@
     "static/css/2.3b16ce14.chunk.css",
     "static/js/2.5c645082.chunk.js",
     "static/css/main.ada1a205.chunk.css",
-    "static/js/main.c6cb29de.chunk.js"
+    "static/js/main.a9bf6ceb.chunk.js"
   ]
 }
