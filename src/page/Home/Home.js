@@ -4,9 +4,12 @@ import Banner from "./views/Banner";
 import Jackpot from "./views/Jackpot";
 import banner1 from "../../assests/banner/01.jpg";
 import banner2 from "../../assests/banner/02.jpg";
-// import banner3 from "../../assests/banner/03.jpg";
+import banner3 from "../../assests/banner/03.jpg";
+import banner4 from "../../assests/banner/04.jpg";
 import mobileAccepted from "../../assests/banner/mobile-accepted.png";
 import mobileWelcome from "../../assests/banner/mobile-welcome.png";
+import mobileDaily from "../../assests/banner/mobile-daily.png";
+import mobileRecommend from "../../assests/banner/mobile-recommend.png";
 import promo1 from "../../assests/common/promo1.jpeg";
 import promo2 from "../../assests/common/promo2.jpeg";
 import GuideStep from "./views/GuideStep";
@@ -41,13 +44,20 @@ const Home = ({ t }) => {
       title: "bonusUnlimited",
       content: "bonusUnlimitedDesc",
     },
-    // {
-    //   id: 3,
-    //   src: banner3,
-    //   mobileSrc: mobileAccepted,
-    //   title: "bonusRecommend",
-    //   content: "bonusRecommendDesc",
-    // },
+    {
+      id: 3,
+      src: banner3,
+      mobileSrc: mobileDaily,
+      title: "bonusRecommend",
+      content: "bonusRecommendDesc",
+    },
+    {
+      id: 4,
+      src:banner4,
+      mobileSrc: mobileRecommend,
+      title: "bonusRecommend",
+      content: "bonusRecommendDesc",
+    },
   ]);
   const [guide] = useState([
     { id: 1, title: "register", content: "registerdesc", src: step1 },
