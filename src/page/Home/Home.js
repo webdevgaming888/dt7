@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.scss";
+import ModalImg from "../../assests/common/modal.jpg";
 import Banner from "./views/Banner";
 import Jackpot from "./views/Jackpot";
 import banner1 from "../../assests/banner/01.jpg";
@@ -27,6 +28,7 @@ import step4 from "../../assests/common/win.png";
 import HomePromo from "./views/HomePromo";
 // import HomeGame from "./views/HomeGame";
 import InfoCentre from "./views/InfoCentre";
+import ModalComponent from "../../components/Modal/Modal";
 
 const Home = ({ t }) => {
   const [banner] = useState([
@@ -69,6 +71,8 @@ const Home = ({ t }) => {
     { id: 1, src: promo1 },
     { id: 2, src: promo2 },
   ]);
+  const [modalShow, setModalShow] = useState(true);
+
   const [winnerList, setWinnerList] = useState([]);
 
   useEffect(() => {
@@ -112,6 +116,8 @@ const Home = ({ t }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Dato777" />
       </Helmet>
+      {modalShow && <ModalComponent onHide={() => setModalShow(false)} imgSrc={ModalImg}/>} 
+      
       <section className="homepage">
         <Banner banner={banner} />
         <Container>
