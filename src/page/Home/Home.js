@@ -41,24 +41,24 @@ const Home = ({ t }) => {
     },
     {
       id: 2,
-      src: banner2,
-      mobileSrc: mobileAccepted,
-      title: "bonusUnlimited",
-      content: "bonusUnlimitedDesc",
-    },
-    {
-      id: 3,
       src: banner3,
       mobileSrc: mobileDaily,
       title: "bonusRecommend",
       content: "bonusRecommendDesc",
     },
     {
-      id: 4,
+      id: 3,
       src:banner4,
       mobileSrc: mobileRecommend,
       title: "bonusRecommend",
       content: "bonusRecommendDesc",
+    },
+    {
+      id: 4,
+      src: banner2,
+      mobileSrc: mobileAccepted,
+      title: "bonusUnlimited",
+      content: "bonusUnlimitedDesc",
     },
   ]);
   const [guide] = useState([
