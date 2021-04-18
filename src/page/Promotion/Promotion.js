@@ -37,12 +37,12 @@ const Promotion = ({t}) => {
           name="description"
           content="Welcome Bonus 50%, Unlimited 10%, Recommend Bonus"
         />
-        <link rel="canonical" href="https://dato777.net/promotion" />
+        <link rel="canonical" href="https://dato777.com/promotion" />
         <meta property="og:title" content={window.compName} />
         <meta property="og:description" content="Welcome Bonus 50%, Unlimited 10%, Recommend Bonus"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://dato777.net/promotion"/>
+        <meta property="og:url" content="https://dato777.com/promotion"/>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Dato777" />
       </Helmet>

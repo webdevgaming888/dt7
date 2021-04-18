@@ -18,14 +18,14 @@ const Game = ({ t }) => {
           name="description"
           content="Dato777 Best Slots Machine, and games to win"
         />
-        <link rel="canonical" href="https://dato777.net/games" />
+        <link rel="canonical" href="https://dato777.com/games" />
         <meta property="og:title" content={window.compName} />
         <meta
           property="og:description"
           content="Dato777 Best Slots Machine, and games to win"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://dato777.net/games" />
+        <meta property="og:url" content="https://dato777.com/games" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Dato777" />
       </Helmet>

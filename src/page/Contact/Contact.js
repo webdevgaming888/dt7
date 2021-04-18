@@ -27,12 +27,12 @@ const Contact = ({ t }) => {
           name="description"
           content="24 Hour support just in Dato777"
         />
-        <link rel="canonical" href="https://dato777.net/contact" />
+        <link rel="canonical" href="https://dato777.com/contact" />
         <meta property="og:title" content={window.compName} />
         <meta property="og:description" content="24 Hour support just in Dato777"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://dato777.net/contact"/>
+        <meta property="og:url" content="https://dato777.com/contact"/>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Dato777" />
       </Helmet>

@@ -14,12 +14,12 @@ const About = ({ t }) => {
           name="description"
           content="Dato777 is one of the leading online betting sites in Malaysia, and provide 24hour support just for you"
         />
-        <link rel="canonical" href="https://dato777.net/about" />
+        <link rel="canonical" href="https://dato777.com/about" />
         <meta property="og:title" content={window.compName} />
         <meta property="og:description" content="Dato777 is the best online casino Malaysia! Welcome Bonus 50%! Trusted Company! Support Digi/Maxis! 24HOUR SUPPORT!"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://dato777.net/about"/>
+        <meta property="og:url" content="https://dato777.com/about"/>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Dato777" />
       </Helmet>
