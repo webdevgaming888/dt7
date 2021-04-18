@@ -11,8 +11,10 @@ import mobileAccepted from "../../assests/banner/mobile-accepted.png";
 import mobileWelcome from "../../assests/banner/mobile-welcome.png";
 import mobileDaily from "../../assests/banner/mobile-daily.png";
 import mobileRecommend from "../../assests/banner/mobile-recommend.png";
-import promo1 from "../../assests/common/promo1.jpeg";
-import promo2 from "../../assests/common/promo2.jpeg";
+import promo1 from "../../assests/common/promo1.jpg";
+import promo2 from "../../assests/common/promo2.jpg";
+import promo3 from "../../assests/common/promo3.jpg";
+import promo4 from "../../assests/common/promo4.jpg";
 import GuideStep from "./views/GuideStep";
 import WinnerList from "./views/WinnerList";
 import { withNamespaces } from "react-i18next";
@@ -70,6 +72,8 @@ const Home = ({ t }) => {
   const [promo] = useState([
     { id: 1, src: promo1 },
     { id: 2, src: promo2 },
+    { id: 3, src: promo3 },
+    { id: 4, src: promo4 },
   ]);
   const [modalShow, setModalShow] = useState(true);
 

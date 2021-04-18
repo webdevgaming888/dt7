@@ -11,6 +11,7 @@ import logoPussy888 from "../../assests/games/pussy888-01.png";
 import logoXE88 from "../../assests/games/xe88-01.png";
 import logoRollex from "../../assests/games/rollex-01.png";
 import logoGreatwall from "../../assests/games/greatwall99-01.png";
+import logoSCR from "../../assests/games/scr888-01.png";
 
 export const kiss = logo918kiss;
 export const kaya = logo918kaya;
@@ -27,6 +28,14 @@ export const rollex = logoRollex;
 export const greatwall = logoGreatwall;
 
 export const GameList = [
+  {
+    id: 0,
+    gameName: "SCR888",
+    androidURL: "https://m.hola888.com/",
+    iosURL: "https://m.hola888.com/",
+    agentURL: "http://kiosk.hola888.com/",
+    gameLogo: logoSCR,
+  },
   {
     id: 1,
     gameName: "918KISSPLUS",
