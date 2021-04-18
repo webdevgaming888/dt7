@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 Disallow:
-Sitemap: https://dato777.net/sitemap.xml
+Sitemap: https://dato777.com/sitemap.xml
